@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+  }
+
+/* NAVIGATION CONTENT*/
+
+.nav-icons {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    margin: 0.6rem 1.5rem;
+  }
+
+.nav-right {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.container-search {
+    display: flex;
+    align-items: center;
+    border: solid 1 black;
+    display: flex;
+    align-items: center;
+}
+
+.container-search > input {
+    padding: 10px 120px;
+    border: solid 1px rgb(173, 173, 173);
+    border-radius: 2px 0 0 2px;
+    z-index: 2;
+}
+
+.container-search > button {
+    padding: 4.5px 20px;
+    background-color: rgb(243, 242, 242);
+    border: solid 1px rgb(173, 173, 173);
+    border-radius: 0 2px 2px 0;
+    border-left: 0;
+    z-index: 1;
+}
+
+.container-search > button:hover {
+    opacity: .85;
+  }
+
+.nav-left {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.avatar-account img {
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+/*MAIN CONTENT*/
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 12rem;
+    background-color: rgb(248, 248, 248);
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0.5rem 0 0 0;
+}
+
+.container-icons-video {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    width: 960px;
+}
+
+.subscribe {
+    background-color: #CC0000;
+    padding: 10px 25px;
+    color: aliceblue;
+    border-radius: 2px;
+}
+.channel-title {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.channel-inscriptions{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.container-channel-title {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.channel-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.likes, .dislikes, .share, .download {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.info-video {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.description-video {
+    padding: 1rem 0;
+    width: 520px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/*ASIDE CONTENT*/
+
+.container-videos-suggestions {
+    display: flex;
+    flex-direction: column;
+    gap: 18px
+}
+
+.video-suggestions {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+}
+
+.container-suggestion-info {
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+}
+
+.container-suggestion-info > h3 {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+h4 {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    color: #515151;
+    padding: 1px 0;
+}
+
+.suggestion-title {
+    margin-bottom: 8px;
+}
+
+.suggestion-channel {
+    margin-bottom: 8px;
+}
