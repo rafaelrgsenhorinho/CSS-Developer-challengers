@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Open Sans;
+}
+
+.header-section {
+    background-image: url("./src/HeaderBackground.png"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 688.5px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.main-title {
+    text-align: center;
+    font-family: Luckiest Guy;
+    font-size: 75px;
+    font-weight: 400;
+    padding-top: 7rem;
+    width: 500px;
+    padding: 0 2rem 0 2rem;
+}
+
+.main-description { 
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    max-width: 1000px;
+    padding: 0 2rem 0 2rem;
+}
+
+.buttons-header {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    gap: 20px;
+}
+
+.windows-dowload {
+    border-style: none;
+    background-color: rgb(255, 255, 255);
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.discord-webpage {
+    color: white;
+    border-style: none;
+    background-color: #23272A;
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0 5rem 0;
+    gap: 5px;
+    
+}
+
+.container-section-1 {
+    width: 400px;
+}
+
+.section-middle {
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0 5rem 0;
+    gap: 5px;
+    width: 100%;
+}
+
+.container-section-2 {
+    width: 400px;
+}
+
+.image-section-2 {
+    order: 1;
+}
+
+.container-section-2 {
+    order: 0;
+}
+
+
+.section-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0 5rem 0;
+    gap: 5px;
+}
+
+.container-section-3 {
+    width: 400px;
+}
+
+.section-footer {
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0 3rem 0;
+    width: 100%;
+    gap: 5px;
+}
+
+.image-section-4 {
+    order: 1;
+}
+
+.container-section-4 {
+    order: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    text-align: center;
+}
+
+.container-section-4 > .subtitle-info {   
+    text-align: center;
+    font-family: Luckiest Guy;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.subtitle-info {
+    font-size: 45px;
+    font-weight: 800;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.description {
+    font-size: 18px;
+    font-weight: 400; 
+}
+
+.container-bottom-logo {
+    background-color: #23272A;
+    text-align: center;
+    align-content: center;
+    height: 134px;
+}
+
+.discord-logo > img {
+    width: 230px;
+}
+
+@media (max-width: 1015px) {
+    .header-section {
+        height: 600px;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .main-title {
+        text-align: start;
+        font-size: 38px;
+        width: 300px;
+        
+    }
+
+    .main-description { 
+        font-size: 16px;
+        text-align: start;
+    }
+    
+    .buttons-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .windows-dowload {
+        padding: 15px 60px;
+    }
+    
+    .discord-webpage {
+        padding: 15px 60px;
+    }
+
+    .subtitle-info {
+        font-weight: 800;
+        font-size: 24px;
+        padding: 0 0.5rem 0 0.5rem;
+    }
+
+    .description {
+        font-size: 16px;
+        font-weight: 400;
+        padding: 0 0.5rem 0 0.5rem;
+    }
+
+    .subtitle-info {
+        padding: 2rem 0.5rem 2rem 0.5rem;
+    }
+
+    .section-top {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 0 3rem 0;
+    }
+
+    .image-section-1 > img {
+        width: 380px;
+    }
+
+    .section-middle {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 0 3rem 0;
+    }
+
+    .image-section-2 > img {
+        width: 380px;
+    }
+
+    .image-section-2 {
+        order: 0;
+    }
+    
+    .container-section-2 {
+        order: 1;
+    }
+
+    .section-bottom {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 0 3rem 0;
+    }
+
+    .image-section-3 > img {
+        width: 380px;
+    }
+
+    .image-section-4 > img {
+        width: 380px;
+    }
+
+    .container-section-4 {
+        width: 400px;
+    }
+
+    .container-section-4 > .subtitle-info {   
+        text-align: start;
+        font-family: Luckiest Guy;
+        font-size: 32px;
+        font-weight: 400;
+        padding: 0 0.5rem 1.5rem 0.5rem;
+    }
+
+    .discord-logo > img {
+        width: 162px;
+    }
+  }
