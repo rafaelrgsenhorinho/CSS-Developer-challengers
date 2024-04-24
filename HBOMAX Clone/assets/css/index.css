@@ -1,0 +1,362 @@
+@import url("./global.css");
+
+/*Main Content*/
+
+
+.header {
+  position: relative;
+  margin-top: 50px;
+  padding: 100px 0 300px;
+  background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite alternate;
+}
+
+.header::after {
+  content: "";
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(0deg, var(--primary-color), transparent);
+}
+
+.main-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  gap: 40px;
+  padding: 0 40px;
+}
+
+.logos-companies {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.main-title-light {
+  display: block;
+  font-weight: lighter;
+  font-size: 2rem;
+}
+
+.divider {
+  width: 70%;
+  max-width: 700px;
+  height: 5px;
+  background: var(--divider-bg-color);
+}
+
+.subscription-value {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.subscription-price {
+    font-family: "Raleway", sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+
+.main-button {
+  animation: wiggle 2.2s linear infinite;
+}
+
+.header .text-small {
+  max-width: 300px;
+  text-align: center;
+}
+
+/*Subscription Cards*/
+
+.subscription {
+  background: url(../images/background-movies-series.png) no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscription-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hbo-description-plans {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.subscription-plans {
+  display: flex;
+  justify-content: space-around;
+  gap: 80px;
+  margin: 40px 0;
+  perspective: 2000px;
+  perspective-origin: top;
+  
+}
+
+.subscription-card {
+  background: var(--card-bg-color);
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 60px;
+  justify-content: space-between;
+  border-radius: 8px;
+  transition: transform 1s ease-in-out;
+}
+
+.subscription-plans:has(.subscription-card:nth-child(1):hover)
+  .subscription-card:nth-child(2) {
+  transform: rotateY(-45deg);
+}
+
+.subscription-plans:has(.subscription-card:nth-child(2):hover)
+  .subscription-card:nth-child(1) {
+  transform: rotateY(45deg);
+}
+
+.subscription-title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+}
+
+.subscription-title .price-text {
+  color: var(--text-color);
+}
+
+.price {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+.subscription-advantages {
+  text-align: left;
+  list-style: none;
+  font-size: 1.25rem;
+  margin-bottom: 14px;
+  padding-left: 14px;
+}
+
+.subscription-advantages::marker {
+  content: "+";
+  font-size: 2rem;
+  margin: 0 8px 0 0;
+}
+
+
+/* Cards Content */
+
+.container-content-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hbo-description-covers {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.content-cards {
+  margin-top: 2.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.content-cards > img{
+  width: 353px;
+}
+
+.card {
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid transparent;
+  transition: transform 0.8s, background 0.8s, border 1s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  border: 2px solid var(--tertiary-color);
+}
+
+.card:hover .card-image {
+  opacity: 0;
+}
+
+.card-image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: opacity 2s;
+}
+
+/* HBO cards */
+
+.card:nth-child(1):hover {
+  background-image: url("../images/hbo-hover_0.webp");
+}
+
+/* Max Originals cards */
+
+.card:nth-child(2):hover {
+  background-image: url("../images/MAX-Hover.webp");
+}
+
+/* DC cards */
+
+.card:nth-child(3):hover {
+  background-image: url("../images/DC-Hover.webp");
+}
+
+/* WB cards */
+
+.card:nth-child(4):hover {
+  background-image: url("../images/WB-Hover.webp");
+}
+
+/* CN cards */
+
+.card:nth-child(5):hover {
+  background-image: url("../images/CN-Hover.png");
+}
+
+/* Champions League cards */
+
+.card:nth-child(6):hover {
+  background-image: url("../images/UCL-Hover.webp");
+}
+
+
+/* Media Queries */
+
+@keyframes wiggle {
+  0%,
+  10% {
+    transform: rotate(0);
+  }
+  15% {
+    transform: rotate(-15deg);
+  }
+  20% {
+    transform: rotate(10deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  30% {
+    transform: rotate(10deg);
+  }
+  35% {
+    transform: rotate(-10deg);
+  }
+  40%,
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .subscription-plans {
+    gap: 40px;
+  }
+
+  .content-cards {
+    gap: 32px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .subscription-plans {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscription-card {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .content-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .price {
+    font-size: 1.5rem;
+  }
+
+  .subscription-advantages {
+    font-size: 1rem;
+  }
+
+  .subscription-title {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .subscription-card {
+    padding: 40px;
+  }
+
+  .content-cards {
+    grid-template-columns: repeat(6, 100%);
+    grid-auto-flow: column;
+    overflow: auto hidden;
+  }
+}
+
+@media (pointer: coarse) {
+  .card:hover {
+    transform: none;
+  }
+
+  .subscription-plans:has(.subscription-card:nth-child(1):hover)
+    .subscription-card:nth-child(2),
+  .subscription-plans:has(.subscription-card:nth-child(2):hover)
+    .subscription-card:nth-child(1) {
+    transform: none;
+  }
+}
+
+/* Animations */
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
